@@ -7,7 +7,7 @@ export default function Resources() {
       <p className='my-2 md:my-4'>FakeDataHub comes with common resources:</p>
       
       
-      <table className=' border-separate md:[border-spacing:2rem] [border-spacing:.5rem] '>
+      <table>
         <thead>
           <tr>
             <td></td>
@@ -16,18 +16,18 @@ export default function Resources() {
         </thead>
         <tbody>
           <tr>
-            <td>
+            <td className='text-xs md:text-base'>
               <Link className='underline' to='https://dummy-data-api-production.up.railway.app/countries'>/countries</Link>
             </td>
-            <td>
+            <td className='text-sm md:text-lg'>
               250 countries
             </td>
           </tr>
           <tr>
-            <td>
+            <td className='text-xs md:text-base'>
               <Link className='underline' to='https://dummy-data-api-production.up.railway.app/users'>/users</Link>
             </td>
-            <td>
+            <td className='text-sm md:text-lg'>
               100 user
             </td>
           </tr>
