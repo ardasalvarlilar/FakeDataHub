@@ -45,7 +45,7 @@ export default function MainSection() {
         <p className='text-lg font-normal text-center md:text-2xl'>Get dummy/fake JSON data to use as placeholder in development or in prototype testing.</p>
       </MainSectionItem>
       <MainSectionItem>
-        <div className='md:px-3 max-h-[1200px] md:py-5 bg-[#F89A28] overflow-x-scroll md:w-[50%] w-full border border-black rounded-md'>
+        <div className='md:px-3 md:h-[650px] h-[500px] md:py-5 bg-[#F89A28] overflow-x-scroll md:w-[50%] w-full border border-black rounded-md'>
           <div className=' md:w-[50%] w-full'>
           {shownData && (
             <div className='md:p-3 '>
