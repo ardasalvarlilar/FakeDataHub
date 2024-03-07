@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom'
 
 export default function Resources() {
   return (
-    <div className='px-24'>
-      <h2 className='my-2 text-xl font-semibold'>Resources</h2>
-      <p className='my-4'>FakeDataHub comes with common resources:</p>
+    <div className='px-6 md:px-24'>
+      <h2 className='my-2 text-lg font-semibold md:text-xl'>Resources</h2>
+      <p className='my-2 md:my-4'>FakeDataHub comes with common resources:</p>
       
       
-      <table className=' border-separate [border-spacing:2rem]'>
+      <table className=' border-separate md:[border-spacing:2rem] [border-spacing:.5rem] '>
         <thead>
           <tr>
             <td></td>

@@ -14,11 +14,11 @@ export default function ExampleFetch() {
 
 
   return (
-    <div className='px-24 py-8 bg-slate-200'>
-      <h1 className='mb-4 text-3xl font-bold text-center'>Lorem ipsum data can not satisfy anymore?</h1>
+    <div className='px-6 py-2 md:px-24 md:py-8 bg-slate-200'>
+      <h1 className='mb-2 text-lg font-bold text-center md:mb-4 md:text-3xl'>Lorem ipsum data can not satisfy anymore?</h1>
       <p>FakeDataHub allows you to practice real-life asynchronous operations by making requests to different endpoints. It provides the opportunity to develop without the need for a backend, using your preferred frontend framework. This can be particularly useful if you are conducting educational sessions🙃, teaching the intricacies of frontend development, including asynchronous operations using fetch.</p>
-      <h3 className='my-3 text-lg font-bold'>Example useage with axios</h3>
-      <pre className='px-1 py-3 text-lg text-white bg-black rounded-sm'>
+      <h3 className='my-1 text-lg font-bold md:my-3'>Example useage with axios</h3>
+      <pre className='px-1 py-3 overflow-auto text-xs text-white bg-black rounded-sm md:text-lg'>
         <code>
           <span className='text-[#f89a28]'>const</span> <span className='text-[#fff]'>request</span> = <span className='text-[#f89a28]'>await</span> <span className='text-[#DC84F3]'>axios</span>
           <span className='text-[#fff]'>.get</span><span className='text-[#f89a28]'>(</span><span className='text-green-600'>"https://dummy-data-api-production.up.railway.app/users"</span><span className='text-[#f89a28]'>)</span><br />

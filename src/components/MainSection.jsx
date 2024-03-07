@@ -39,18 +39,18 @@ export default function MainSection() {
     setShownData(countries[randomNumber])
   },[countries])
   return (
-    <main className='flex justify-center min-h-screen px-4 gap-44'>
+    <main className='flex flex-col items-center py-12 md:min-h-screen md:justify-center md:px-4 md:flex-row md:gap-44 md:py-0'>
       <MainSectionItem>
-        <BrandHeading textSize='text-5xl px-3 py-2'/>
-        <p className='text-2xl font-normal text-center'>Get dummy/fake JSON data to use as placeholder in development or in prototype testing.</p>
+        <BrandHeading textSize='text-2xl text-center md:text-5xl md:px-3 md:py-2 px-2 py-1'/>
+        <p className='text-lg font-normal text-center md:text-2xl'>Get dummy/fake JSON data to use as placeholder in development or in prototype testing.</p>
       </MainSectionItem>
       <MainSectionItem>
-        <div className='px-3 py-5 bg-[#F89A28] border border-black rounded-md'>
-          <div className='w-[50%]'>
+        <div className='md:px-3 max-h-[1200px] md:py-5 bg-[#F89A28] overflow-x-scroll md:w-[50%] w-full border border-black rounded-md'>
+          <div className=' md:w-[50%] w-full'>
           {shownData && (
-            <div className='p-3 '>
+            <div className='md:p-3 '>
               <pre className='w-full '>
-              <code className='text-white'>{JSON.stringify(shownData, null, 2)}</code>
+              <code className='text-xs text-white md:text-base'>{JSON.stringify(shownData, null, 2)}</code>
               </pre>
             </div>
           )}
