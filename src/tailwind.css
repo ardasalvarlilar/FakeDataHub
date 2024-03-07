@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.json-output {
+  color: #333; /* Varsayılan renk */
+}
+
+.json-key {
+  @apply text-orange-400; /* Key renk */
+}
+
+.json-value {
+  @apply text-red-300; /* Value renk */
+}
