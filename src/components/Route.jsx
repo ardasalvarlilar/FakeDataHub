@@ -75,7 +75,7 @@ export default function Route() {
               GET
             </td>
             <td className='text-xs md:text-base'>
-              <Link className='underline' to='https://dummy-data-api-production.up.railway.app/users/sm md:text-lganby5@ehow.com'>/users/sm md:text-lganby5@ehow.com</Link>
+              <Link className='underline' to='https://dummy-data-api-production.up.railway.app/users/smanby5@ehow.com'>/users/sm md:text-lganby5@ehow.com</Link>
             </td>
             <td className='text-sm md:text-lg '>
               Returns the user which email matches
