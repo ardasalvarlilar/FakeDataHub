@@ -24,7 +24,7 @@ export default function MainSection() {
     async function getApi() {
       try {
         const endpoint = randomNumber % 2 == 0 ? 'countries' : 'users'
-        const response = await axios.get(`http://127.0.0.1:8000/${endpoint}`);
+        const response = await axios.get(`https://dummy-data-api-production.up.railway.app/${endpoint}`);
         setCountries(response.data);
       } catch (error) {
         console.error('Error fetching data:', error);

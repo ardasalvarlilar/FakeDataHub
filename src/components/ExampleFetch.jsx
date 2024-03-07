@@ -4,7 +4,7 @@ import CopyToClipboard from 'react-copy-to-clipboard'
 export default function ExampleFetch() {
   const [copied, setCopied] = useState(false);
   const fetchCode = `
-    const request = await axios.get('http://127.0.0.1:8000/users');
+    const request = await axios.get('https://dummy-data-api-production.up.railway.app/users');
     const response = request.data;
   `;
   const handleCopy = () => {
@@ -21,7 +21,7 @@ export default function ExampleFetch() {
       <pre className='px-1 py-3 text-lg text-white bg-black rounded-sm'>
         <code>
           <span className='text-[#f89a28]'>const</span> <span className='text-[#fff]'>request</span> = <span className='text-[#f89a28]'>await</span> <span className='text-[#DC84F3]'>axios</span>
-          <span className='text-[#fff]'>.get</span><span className='text-[#f89a28]'>(</span><span className='text-green-600'>"http://127.0.0.1:8000/users"</span><span className='text-[#f89a28]'>)</span><br />
+          <span className='text-[#fff]'>.get</span><span className='text-[#f89a28]'>(</span><span className='text-green-600'>"https://dummy-data-api-production.up.railway.app/users"</span><span className='text-[#f89a28]'>)</span><br />
           <span className='text-[#f89a28]'>const</span> <span className='text-[#fff]'>response</span> = <span className='text-[#DC84F3]'>request</span>.<span className='text-[#F3CCF3]'>data</span>
         </code>
       </pre>

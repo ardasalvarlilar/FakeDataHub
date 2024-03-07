@@ -7,7 +7,7 @@ export default function FetchDetail() {
   const [data,setData] = useState(null)
   useEffect(() => {
     async function getApi(){
-      const request = await axios.get(`http://127.0.0.1:8000/${param}`)
+      const request = await axios.get(`https://dummy-data-api-production.up.railway.app/${param}`)
       const response = request.data
       console.log(response)
     }
