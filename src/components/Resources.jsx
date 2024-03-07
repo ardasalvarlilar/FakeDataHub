@@ -17,7 +17,7 @@ export default function Resources() {
         <tbody>
           <tr>
             <td>
-              <Link className='underline' to='https://dummy-data-api-production.up.railway.app/'>/countries</Link>
+              <Link className='underline' to='https://dummy-data-api-production.up.railway.app/countries'>/countries</Link>
             </td>
             <td>
               250 countries
@@ -25,7 +25,7 @@ export default function Resources() {
           </tr>
           <tr>
             <td>
-              <Link className='underline' to='https://dummy-data-api-production.up.railway.app/'>/users</Link>
+              <Link className='underline' to='https://dummy-data-api-production.up.railway.app/users'>/users</Link>
             </td>
             <td>
               100 user
