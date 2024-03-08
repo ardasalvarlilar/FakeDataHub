@@ -1,5 +1,5 @@
+import RouteTableRow from './RouteTableRow'
 
-import {Link} from 'react-router-dom'
 export default function Route() {
   return (
     <div className='px-6 py-4 mt-8 md:py-12 md:px-24 md:mt-12'>
@@ -14,73 +14,15 @@ export default function Route() {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td className='text-sm md:text-lg'>
-              GET
-            </td>
-            <td className='text-xs md:text-base'>
-              <Link className='underline' to='https://dummy-data-api-production.up.railway.app/countries'>/countries</Link>
-            </td>
-            <td className='text-sm md:text-lg '>
-              Returns all the countries
-            </td>
-          </tr>
-          <tr>
-            <td className='text-sm md:text-lg'>
-              GET
-            </td>
-            <td className='text-xs md:text-base'>
-              <Link className='underline' to='https://dummy-data-api-production.up.railway.app/countries/1'>/countries/1</Link>
-            </td>
-            <td className='text-sm md:text-lg '>
-              Returns the country which id matches
-            </td>
-          </tr>
-          <tr>
-            <td className='text-sm md:text-lg'>
-              GET
-            </td>
-            <td className='text-xs md:text-base'>
-              <Link className='underline' to='https://dummy-data-api-production.up.railway.app/countries/switzerland'>/countries/switzerland</Link>
-            </td>
-            <td className='text-sm md:text-lg '>
-              Returns the country which name matches
-            </td>
-          </tr>
-
-          <tr>
-            <td className='text-sm md:text-lg'>
-              GET
-            </td>
-            <td className='text-xs md:text-base'>
-              <Link className='underline' to='https://dummy-data-api-production.up.railway.app/users'>/users</Link>
-            </td>
-            <td className='text-sm md:text-lg '>
-              Returns all the users
-            </td>
-          </tr>
-          <tr>
-            <td className='text-sm md:text-lg'>
-              GET
-            </td>
-            <td className='text-xs md:text-base'>
-              <Link className='underline' to='https://dummy-data-api-production.up.railway.app/users/1'>/users/1</Link>
-            </td>
-            <td className='text-sm md:text-lg '>
-              Returns the user which id matches
-            </td>
-          </tr>
-          <tr>
-            <td className='text-sm md:text-lg'>
-              GET
-            </td>
-            <td className='text-xs md:text-base'>
-              <Link className='underline' to='https://dummy-data-api-production.up.railway.app/users/ahellin2@examiner.com'>/users/ahellin2@examiner.com</Link>
-            </td>
-            <td className='text-sm md:text-lg '>
-              Returns the user which email matches
-            </td>
-          </tr>
+          <RouteTableRow httpMethodName='GET' url='countries' urlText='/countries' routeDescription='Returns all the countries' />
+          <RouteTableRow httpMethodName='GET' url='countries/1' urlText='/countries/1' routeDescription='Returns the country which id matches' />
+          <RouteTableRow httpMethodName='GET' url='countries/switzerland' urlText='/countries/switzerland' routeDescription='Returns the country which name matches' />
+          <RouteTableRow httpMethodName='GET' url='users' urlText='/users' routeDescription='Returns all the users' />
+          <RouteTableRow httpMethodName='GET' url='users/1' urlText='/users/1' routeDescription='Returns the user which id matches' />
+          <RouteTableRow httpMethodName='GET' url='users/ahellin2@examiner.com' urlText='/users/ahellin2@examiner.com' routeDescription='Returns the user which email matches' />
+          <RouteTableRow httpMethodName='GET' url='products' urlText='/pruducts' routeDescription='Returns all the products' />
+          <RouteTableRow httpMethodName='GET' url='products/1' urlText='/pruducts/1' routeDescription='Returns the product which id matches' />
+          <RouteTableRow httpMethodName='GET' url='products/laptop' urlText='/pruducts/laptop' routeDescription='Returns those products which product name matches inc. product comments' />
         </tbody>
       </table>
     </div>

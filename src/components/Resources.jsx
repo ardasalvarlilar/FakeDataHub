@@ -31,6 +31,14 @@ export default function Resources() {
               100 user
             </td>
           </tr>
+          <tr>
+            <td className="text-xs md:text-base">
+              <Link className='underline' to='https://dummy-data-api-production.up.railway.app/products'>/products</Link>
+            </td>
+            <td>
+              100 products
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
