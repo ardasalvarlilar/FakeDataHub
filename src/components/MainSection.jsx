@@ -6,12 +6,13 @@ import axios from 'axios'
 export default function MainSection() {
   const [countries, setCountries] = useState([]);
   const [shownData, setShownData] = useState({});
-  const [randomNumber, setRandomNumber] = useState(null)
+  const [randomNumber, setRandomNumber] = useState(0)
+  const [endpoint,setEndpoint] = useState('countries')
 
   // her 5 saniyede bir tekrar 0-100 arasında rastgele sayı üret
   useEffect(() => {
     const intevalId = setInterval(() => {
-      const randomNum = Math.floor(Math.random() * 100)
+      const randomNum = Math.floor(Math.random() * 3)
       setRandomNumber(randomNum)
     },5000)
     return () => {
@@ -23,7 +24,9 @@ export default function MainSection() {
   useEffect(() => {
     async function getApi() {
       try {
-        const endpoint = randomNumber % 2 == 0 ? 'countries' : 'users'
+        const routes = ['countries','users','products']
+        const endpoint = routes[randomNumber]
+        setEndpoint(endpoint)
         const response = await axios.get(`https://dummy-data-api-production.up.railway.app/${endpoint}`);
         setCountries(response.data);
       } catch (error) {
@@ -56,6 +59,10 @@ export default function MainSection() {
           )}
           </div>
         </div>
+        {shownData && endpoint && <div className='flex gap-5'>
+          <span>{endpoint}</span>
+          <span>{shownData.name}</span>
+          </div>}
       </MainSectionItem>
     </main>
   )
